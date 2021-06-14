@@ -69,16 +69,17 @@ header .profile-image {
   width: 150px;
   height: 150px;
   border-radius: 50%;
-  border: 3px solid #ffffff;
+  border: 5px solid #ffffff;
   transition: all .5s;
 }
 header .profile-image:hover {
-  transform: scale(1.2) rotate(5deg);
+  transform: rotate(.5turn);
 }
 header.other {
   background: #ffffff;
   height: auto;
 }
+
 .tag {
   background-color: #ffffff;
   color: #0E0906;
@@ -92,6 +93,7 @@ header.other {
   color: #ffffff;
 }
 .card {
+  flex-grow: 1;
   margin: 30px;
   padding: 20px 40px 40px;
   max-width: 500px;
@@ -106,10 +108,8 @@ header.other {
 }
 
 ul.skills li {
-  padding: 0;
   text-align: center;
 }
-
 .skills li {
   border-radius: 6px;
   display: inline-block;
@@ -123,7 +123,12 @@ ul.skills li {
   background: #CB997E;
 }
 
-ul.about li{
+#books {
+  width: auto;
+  max-width: 400px;
+}
+
+.about li{
   padding-bottom: 5px; 
 }
 
@@ -135,6 +140,7 @@ footer {
   width: 100%;
   min-height: 30px;
   padding: 20px 0 40px 20px;
+  margin: auto;
 }
 
 footer .copyright {
@@ -188,6 +194,7 @@ a.social:hover {
       -ms-flex-pack: distribute;
       justify-content: space-around;
       margin: 0 auto;
+      flex-wrap: wrap;
   }
 
   header.home {
